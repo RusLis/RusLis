@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="galerija.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</head>
+
+<body>
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        //   alert("TEST");
+        x = 0;
+        $(".box").each(function () {
+          x = Math.random() * 1000;
+          $(this).delay(x).animate({ opacity: 0 });
+
+        });
+      });
+
+      $(".box").each(function () {
+        r = 0;
+        g = 0;
+        b = 0;
+        $(".box").hover(function () {
+          r = Math.floor((Math.random() * 256) + 1);
+          g = Math.floor((Math.random() * 256) + 1);
+          b = Math.floor((Math.random() * 256) + 1);
+          $(this).css("background-color", "rgb(" + r + "," + g + "," + b + ")");
+        })
+      })
+    });
+
+
+  </script>
+  <div class="wrapper">
+    <div class="box a">A</div>
+    <div class="box b">B</div>
+    <div class="box c">C</div>
+    <div class="box d">D</div>
+    <div class="box e">E</div>
+    <div class="box f">F</div>
+    <div class="box g">G</div>
+    <div class="box h">H</div>
+    <div class="box i">I</div>
+  </div>
+  <button class="CLICK">CLICK</button>
+
+
+
+</body>
+
+</html>

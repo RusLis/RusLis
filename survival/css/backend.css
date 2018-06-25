@@ -1,0 +1,16 @@
+.all-table {
+     min-width: 100%; 
+}
+
+/* .mdl-button, .mdl-button--fab {
+    max-width: 50px!important;
+    height: 50px!important;
+} */
+
+table {
+    max-width: 90%;
+}
+
+.mdl-tabs__panel {
+    margin-top: 50px;
+}
