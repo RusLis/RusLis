@@ -1,7 +1,7 @@
 <?php
 // define('DB_NAME','survival');
 // define('DB_LOGIN','survival');
-// define('DB_PASS','UzpleisaSukukyti');
+// define('DB_PASS','**************');
 // DEFINE('DB_HOST','localhost');
 // $db_connect = mysqli_connect(DB_HOST,DB_LOGIN,DB_PASS,DB_NAME);
 // mysqli_set_charset($db_connect,"utf8");
